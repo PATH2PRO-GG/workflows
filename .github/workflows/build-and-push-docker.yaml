@@ -33,7 +33,7 @@ jobs:
         echo "PACKAGE_NAME and ACR_RUN_FILE cannot be declared in the same run"
         exit 1
     - name: Checkout with dependencies
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
       env:
         DEPLOY_TOKEN: '${{ secrets.DEPLOY_TOKEN }}'
       if: "${{ env.DEPLOY_TOKEN != '' }}"
